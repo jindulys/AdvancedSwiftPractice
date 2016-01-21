@@ -16,6 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let course1 = Course(name: "Math", teacher: "Linda")
+        let course2 = Course(name: "English", teacher: "Clare")
+        
+        let array1 = [course1, course2]
+        let array2 = array1
+        
+        array1[1].name = "History"
+        print(array1)
+        print(array2)
+        
+        let arr = [3,1,19,6,16,100,2]
+        let sortedArr = arr.sort { $0 > $1}
+        print(sortedArr)
+        print(arr)
+        
+        if let firstEven = arr.findElement({ $0%2 == 0 }) {
+            print(firstEven)
+        }
         return true
     }
 
