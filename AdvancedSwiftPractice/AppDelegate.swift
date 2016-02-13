@@ -44,6 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let foodGenerator = KrakenFoodGenerator()
         foodGenerator.printTime()
         
+        let simon = Account(100)
+        let bank = Account(10000)
+        
         return true
     }
 
