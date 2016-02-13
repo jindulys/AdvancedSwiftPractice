@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Fabric.with([Crashlytics.self])
+
         
         let course1 = Course(name: "Math", teacher: "Linda")
         let course2 = Course(name: "English", teacher: "Clare")
@@ -35,6 +40,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let firstEven = arr.findElement({ $0%2 == 0 }) {
             print(firstEven)
         }
+        
+        let foodGenerator = KrakenFoodGenerator()
+        foodGenerator.printTime()
+        
         return true
     }
 

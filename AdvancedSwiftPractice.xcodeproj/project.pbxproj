@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4BEF861C572A80006D1D3C /* InterestingTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BEF851C572A80006D1D3C /* InterestingTips.swift */; };
+		0E5680061C5977EF00DD267C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5680041C5977EF00DD267C /* Fabric.framework */; };
+		0E5680071C5977EF00DD267C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5680051C5977EF00DD267C /* Crashlytics.framework */; };
 		0E6448E31C4C01DC001419AF /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6448E21C4C01DC001419AF /* Collections.swift */; };
 		0EEA23921C45E7F8006B1313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA23911C45E7F8006B1313 /* AppDelegate.swift */; };
 		0EEA23941C45E7F8006B1313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA23931C45E7F8006B1313 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4BEF851C572A80006D1D3C /* InterestingTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestingTips.swift; sourceTree = "<group>"; };
+		0E5680041C5977EF00DD267C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		0E5680051C5977EF00DD267C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		0E6448E21C4C01DC001419AF /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = Sources/Collections.swift; sourceTree = "<group>"; };
 		0EEA238E1C45E7F8006B1313 /* AdvancedSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEA23911C45E7F8006B1313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5680071C5977EF00DD267C /* Crashlytics.framework in Frameworks */,
+				0E5680061C5977EF00DD267C /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,8 @@
 		0EEA23851C45E7F7006B1313 = {
 			isa = PBXGroup;
 			children = (
+				0E5680041C5977EF00DD267C /* Fabric.framework */,
+				0E5680051C5977EF00DD267C /* Crashlytics.framework */,
 				0EEA23901C45E7F8006B1313 /* AdvancedSwiftPractice */,
 				0EEA23A51C45E7F8006B1313 /* AdvancedSwiftPracticeTests */,
 				0EEA23B01C45E7F8006B1313 /* AdvancedSwiftPracticeUITests */,
@@ -135,6 +145,7 @@
 			children = (
 				0E6448E21C4C01DC001419AF /* Collections.swift */,
 				0EEA23C01C45F939006B1313 /* introduction.swift */,
+				0E4BEF851C572A80006D1D3C /* InterestingTips.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 				0EEA238A1C45E7F8006B1313 /* Sources */,
 				0EEA238B1C45E7F8006B1313 /* Frameworks */,
 				0EEA238C1C45E7F8006B1313 /* Resources */,
+				0E5680031C5977C600DD267C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -265,6 +277,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E5680031C5977C600DD267C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 4b4d8d06b50329b6e53de491e29771f7b8257ab0 3e8876d700c1b160d3b4e895b69c2c7d895cd7fd851c56ddcb62b9ffae17bfcd";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0EEA238A1C45E7F8006B1313 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,6 +301,7 @@
 				0EEA23941C45E7F8006B1313 /* ViewController.swift in Sources */,
 				0EEA23C11C45F939006B1313 /* introduction.swift in Sources */,
 				0EEA23921C45E7F8006B1313 /* AppDelegate.swift in Sources */,
+				0E4BEF861C572A80006D1D3C /* InterestingTips.swift in Sources */,
 				0E6448E31C4C01DC001419AF /* Collections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AdvancedSwiftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.AdvancedSwiftPractice;
@@ -426,6 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AdvancedSwiftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.AdvancedSwiftPractice;
